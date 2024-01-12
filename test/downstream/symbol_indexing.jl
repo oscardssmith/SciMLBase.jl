@@ -54,7 +54,7 @@ end
 @testset "observed shouldn't error" begin
     for obj in [prob, integ, sol]
         obj[:a]
-        observed(obh, :a)
+        SymbolicIndexingInterface.observed(obj, :a)
     end
 end
 
